@@ -206,7 +206,7 @@ protected $conn;
         $update_value = "";
         if (is_array($data)) {
             foreach($data as $key => $val) {
-                $update_value[] = "$key='{$val}'"
+                $update_value[] = "$key='{$val}'";
             }
             $update_value = implode(",", $update_value);
         }
